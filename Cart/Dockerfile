@@ -2,7 +2,7 @@ FROM node:20
 WORKDIR /opt/server
 COPY package.json .
 COPY *.js .
-RUN npm install
+RUN npm install   # installing dependencies
 ENV REDIS_HOST="redis" \
     CATALOGUE_HOST="catalogue" \
     CATALOGUE_PORT="8080"
